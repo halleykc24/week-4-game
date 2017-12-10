@@ -43,11 +43,9 @@ var resetStart = function(){
 
 	// Images
 
-	var images = [
-	'https://www.google.com/search?q=crystals&tbm=isch&tbs=rimg:CduxWobUcQU2IjgvlOgANRLEu21iJqIRQqUKt5X4V6Kqp9hk80rjtjLq9Y9yciBC8hmMfYcfLTgwTkQK8TAOsMLSqioSCS-U6AA1EsS7EYh9tSXd-k6LKhIJbWImohFCpQoR9jwfufyqgwAqEgm3lfhXoqqn2BGxE2HNn9QxryoSCWTzSuO2Mur1Ed6XmSn5o7ZzKhIJj3JyIELyGYwR7GA_1To120mIqEgl9hx8tODBORBE9FQqexC0iNSoSCQrxMA6wwtKqEWoTxtpA5_1CQ&tbo=u&sa=X&ved=0ahUKEwj0vN_hy_PXAhXORN8KHV5TDhoQ9C8IHw&biw=1008&bih=837&dpr=2#imgdii=iOYORUmtS32FcM:&imgrc=t5X4V6Kqp9hLsM:',
-	'https://www.google.com/imgres?imgurl=https%3A%2F%2Fmbch.guide%2Fwp-content%2Fuploads%2Fcrystal_drstrange.png&imgrefurl=https%3A%2F%2Fmbch.guide%2Fcrystalls%2Fspisok-imeyushhixsya-kristallov%2F&docid=lNFR0QR6_n4-BM&tbnid=j3JyIELyGYynLM%3A&vet=10ahUKEwjQht2kzPPXAhWr5YMKHSiFBjoQMwj3ASgFMAU..i&w=256&h=256&bih=837&biw=1008&q=crystals&ved=0ahUKEwjQht2kzPPXAhWr5YMKHSiFBjoQMwj3ASgFMAU&iact=mrc&uact=8#h=256&imgdii=2OfKnCaygv23NM:&vet=10ahUKEwjQht2kzPPXAhWr5YMKHSiFBjoQMwj3ASgFMAU..i&w=256',
-	'https://www.google.com/search?q=crystals&tbm=isch&tbs=rimg:CbeV-FeiqqfYIjibnre0EnN17S-U6AA1EsS7_11KNMqO0NaOI5g5FSa1LfVnr3XZppfLtqEpTXMIJvDpKUB0V-Z323ioSCZuet7QSc3XtEV4O_1qg8qX8MKhIJL5ToADUSxLsRiH21Jd36TosqEgn_1Uo0yo7Q1oxGE4kXF8nz_1XCoSCYjmDkVJrUt9ERiMehlCqdeMKhIJWevddmml8u0RIkXXdao10P8qEgmoSlNcwgm8OhG7gQ3MtzeT5CoSCUpQHRX5nfbeEfunAHaWfIfz&tbo=u&sa=X&ved=0ahUKEwiZj_HTzPPXAhUDleAKHRsUCoIQ9C8IHw&biw=1008&bih=837&dpr=2#imgrc=t5X4V6Kqp9hLsM:',
-	'https://www.google.com/imgres?imgurl=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fmarvel-contestofchampions%2Fimages%2F8%2F8d%2FDaily_Crystal.png%2Frevision%2Flatest%2Fscale-to-width-down%2F200%3Fcb%3D20150825213624&imgrefurl=http%3A%2F%2Fmarvel-contestofchampions.wikia.com%2Fwiki%2FCrystal&docid=i2Gj1moBX8McdM&tbnid=E7aBEveuCPds_M%3A&vet=10ahUKEwjQht2kzPPXAhWr5YMKHSiFBjoQMwj9ASgLMAs..i&w=200&h=200&bih=837&biw=1008&q=crystals&ved=0ahUKEwjQht2kzPPXAhWr5YMKHSiFBjoQMwj9ASgLMAs&iact=mrc&uact=8#h=200&imgdii=mAU6sKeCzfXJwM:&vet=10ahUKEwjQht2kzPPXAhWr5YMKHSiFBjoQMwj9ASgLMAs..i&w=200']
+	var images = ['assets/images/triangle.png','assets/images/teardrop.png',
+				'assets/images/triangle.png','assets/images/teardrop.png'];
+	
 
 	// Function for radndom number being between 19-120
 	
@@ -84,6 +82,7 @@ var resetStart = function(){
 		crystal.css({
 
 			"background-image":"url('" + images[i] + "')",
+			"background-size":"cover"
 	});
 
 		$(".crystals").append(crystal);
@@ -147,11 +146,6 @@ counter = 0;
 resetStart();
 
 }
-
-
-
-
-
 
 
 });

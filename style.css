@@ -2,7 +2,7 @@
 .crystals{
 	display: flex;
 	justify-content: space-around;
-	border:1px solid white;
+	border:1px solid none;
 	align-items: center;
 
 }
@@ -12,10 +12,21 @@
 	border: 1px solid black;
 	height: 200px;
 	width: 200px;
+	border-radius: 4px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	transition:box-shadow 0.5s;
 }
 
-img{
-
-
-	width: 20px;
+.crystal:hover{
+	box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
+	transition:box-shadow 0.5s;
 }
+
+
+
+body{
+	background-image: url("assets/images/stevenuniverse.png");
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
